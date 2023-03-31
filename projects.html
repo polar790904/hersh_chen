@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>無標題文件</title>
+
+<!--bootstrap-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--bootstrap-->
+
+<!--icon-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!--icon-->
+
+<!--meun-->
+<link rel="stylesheet" href="css/style.css"/>
+<!--meun-->
+
+<!--loading-->
+<link rel="stylesheet" href="css/loading.css"/>
+<!--loading-->
+
+<style>
+body { background:transparent; }
+body:after {
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	display:block;
+	background:url(image/backgroundimage/12083.jpg) no-repeat 50% 50%;
+	background-size:cover;
+}
+
+.item_pic1_bg, .item_pic2_bg, .item_pic3_bg, .item_pic4_bg, .item_pic5_bg, .item_pic6_bg {
+	display:none;
+	position:absolute; 
+	width:100%; 
+	height:100%; 
+	background-color:rgba(252, 216, 70, 0.9);
+	}
+.item_picview {
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+	font-family: 'Ubuntu', sans-serif;
+	letter-spacing:1px;
+	font-size:6px;
+	padding:6px 20px 6px 20px;
+	border-width:1px;
+	border-style:solid;
+	}
+	
+</style>
+
+</head>
+
+<body>
+
+<!--LODADING-->
+<div class="loading">
+<p>JoyceHe<br /><span>PORTFOLIO WEBSITE</span></p>
+<div id="myProgress">
+  <div id="myBar">
+    <div id="label"></div>
+  </div>
+</div>
+</div>
+<!--LODADING-->
+
+<!--MENU-->
+<header>
+<div id="menu" class="container fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <a style="text-decoration:none" class="designnamelogo" href="index.html">JoyceHe</a>
+<button style="background-color:#FFF" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div data-spy="scroll" class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav" href="about.html">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav active" href="projects.html">Projects</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav" href="contact.html">Contact Me</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+</header>
+<!--MENU-->
+
+<div class="col-md-10 offset-md-1 projects_title text-left">
+<span>Commercial</span><br />
+<span>Exhibition Space</span><br />
+Design_Portfolio<br />
+</div>
+
+<!--CONTENT-->
+<section>
+<div class="col-lg-12 text-center projects" id="projects">
+
+   <div class="row projects_con">
+     
+       <div class="box_1">
+          <div id="item_pic1" class="box_pic" style="background-image:url(image/projects/1571715127_thumb_400.jpg)"> <div class="item_pic1_bg"><p class="item_picview">VIEW PROJECT</p> </div> </div>
+          <div onclick="location.href='project_HUBLOT.html'" id="item_info1" class="box_info1">
+             <h3 style="font-family: 'Ramabhadra', sans-serif;">HUBLOT</h3><p>Exhibition Space</p><span>2020/08/</span></div>
+       </div>
+       
+       <div class="box_2">
+          <div id="item_pic2" class="box_pic" style="background-image:url(image/projects/1571715127_thumb_400.jpg)"> <div class="item_pic2_bg"><p class="item_picview">VIEW PROJECT</p> </div> </div>
+          <div onclick="location.href='project_HUBLOT.html'" id="item_info2" class="box_info2">
+            <h3>ProjectName</h3><p>Exhibition Space</p><span>2020/08/</span></div>
+       </div>
+       
+       <div class="box_3">
+          <div id="item_pic3" class="box_pic" style="background-image:url(image/projects/1571715127_thumb_400.jpg)"> <div class="item_pic3_bg"><p class="item_picview">VIEW PROJECT</p> </div> </div>
+          <div onclick="location.href='project_HUBLOT.html'" id="item_info3" class="box_info3">
+            <h3>ProjectName</h3><p>Exhibition Space</p><span>2020/08/</span></div>
+       </div>
+       
+       <div class="box_4">
+          <div id="item_pic4" class="box_pic" style="background-image:url(image/projects/1571715127_thumb_400.jpg)"> <div class="item_pic4_bg"><p class="item_picview">VIEW PROJECT</p> </div> </div>
+          <div onclick="location.href='project_HUBLOT.html'" id="item_info4" class="box_info4">
+            <h3>ProjectName</h3><p>Exhibition Space</p><span>2020/08/30</span></div>
+       </div>
+       
+       <div class="box_1">
+          <div id="item_pic5" class="box_pic" style="background-image:url(image/projects/1571715127_thumb_400.jpg)"> <div class="item_pic5_bg"><p class="item_picview">VIEW PROJECT</p> </div> </div>
+          <div onclick="location.href='project_HUBLOT.html'" id="item_info5" class="box_info1">
+             <h3>ProjectName</h3><p>Exhibition Space</p><span>2020/08/</span></div>
+       </div>
+       
+       <div class="box_2">
+          <div id="item_pic6" class="box_pic" style="background-image:url(image/projects/1571715127_thumb_400.jpg)"> <div class="item_pic6_bg"><p class="item_picview">VIEW PROJECT</p> </div> </div>
+          <div onclick="location.href='project_HUBLOT.html'" id="item_info6" class="box_info2">
+            <h3>Project Name</h3><p>Exhibition Space</p><span>2020/08/</span></div>
+       </div>
+       
+   </div> 
+</div> 
+
+ 
+ 
+ 
+</div>   
+</section>
+
+
+<section>
+ <!--Footer--> 
+ <div class="col-md-12 text-center" id="bottom">
+     <div id="gotop"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></div>
+     <br />
+     <div class="footertext">Copyright © 2020 JoyceHe Designed by HershChen</div>
+  </div>
+  <!--Footer--> 
+</section>
+
+<!--CONTENT-->
+
+</body>
+<script>
+/* LODAING完載入 */
+$(document).ready(function(){
+  var elem = document.getElementById("myBar");   /* 進度條 */
+  var width = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("label").innerHTML = width * 1  + '%';
+    }
+  }
+   $(window).load(function(){
+        $(".loading").delay(2500).fadeOut(1000)   /* 延遲淡出 */
+		setTimeout(function(){
+		$('html,body').css("overflow-Y","visible");
+	},2500);
+    });
+});
+</script>
+<script>
+/* 漢堡展開事件 */
+var toggler=0;
+        $(".navbar-toggler").click(function() {
+            if(toggler==0){
+                 $("#menu").css({"height":"100%","background-color":"rgba(100,100,100,0.9)","overflow":"auto"});
+                 toggler=1;
+            }else  {
+                 $("#menu").removeAttr("style"); /* 消除CSS */
+                 toggler=0;
+            }
+			 });
+</script>
+<script type="text/javascript">
+/* 按下GoTop回頂端 */
+$(function() {
+    $('#gotop').click(function(){
+        $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回SCROLL到最頂上 */
+        return false;
+    });
+    
+});
+</script> 
+<script type="text/javascript">
+$(document).ready(function(){
+	
+  $("#item_info1").mouseenter(function(){
+  $("#item_info1").css({"background-color":"rgba(204,0,0,1)",});
+  $("#item_pic1").css({"transform":"scale(1.2)"});
+     setTimeout(function(){
+		 $(".item_pic1_bg").fadeIn(500);
+	 });
+  $("#item_info1").mouseleave(function(){
+  $("#item_info1").css({"background-color":"rgba(50, 50, 50, 1)",});
+  $("#item_pic1").css({"transform":"scale(1)"});
+     setTimeout(function(){
+		 $(".item_pic1_bg").fadeOut(500);
+	 });
+  });
+  });
+  
+  
+  $("#item_info2").mouseenter(function(){
+  $("#item_info2").css({"background-color":"rgba(204,0,0,1)",});
+  $("#item_pic2").css({"transform":"scale(1.2)"});
+     setTimeout(function(){
+		 $(".item_pic2_bg").fadeIn(500);
+	 });
+  $("#item_info2").mouseleave(function(){
+  $("#item_info2").css({"background-color":"rgba(50, 50, 50, 1)",});
+  $("#item_pic2").css({"transform":"scale(1)"});
+     setTimeout(function(){
+		 $(".item_pic2_bg").fadeOut(500);
+	 });
+  });
+  });
+  
+  
+  $("#item_info3").mouseenter(function(){
+  $("#item_info3").css({"background-color":"rgba(204,0,0,1)",});
+  $("#item_pic3").css({"transform":"scale(1.2)"});
+     setTimeout(function(){
+		 $(".item_pic3_bg").fadeIn(500);
+	 });
+  $("#item_info3").mouseleave(function(){
+  $("#item_info3").css({"background-color":"rgba(50, 50, 50, 1)",});
+  $("#item_pic3").css({"transform":"scale(1)"});
+      setTimeout(function(){
+		 $(".item_pic3_bg").fadeOut(500);
+	 });
+  });
+  });
+  
+  $("#item_info4").mouseenter(function(){
+  $("#item_info4").css({"background-color":"rgba(204,0,0,1)",});
+  $("#item_pic4").css({"transform":"scale(1.2)"});
+     setTimeout(function(){
+		 $(".item_pic4_bg").fadeIn(500);
+	 });
+  $("#item_info4").mouseleave(function(){
+  $("#item_info4").css({"background-color":"rgba(50, 50, 50, 1)",});
+  $("#item_pic4").css({"transform":"scale(1)"});
+     setTimeout(function(){
+		 $(".item_pic4_bg").fadeOut(500);
+	 });
+  });
+  });
+  
+  $("#item_info5").mouseenter(function(){
+  $("#item_info5").css({"background-color":"rgba(204,0,0,1)",});
+  $("#item_pic5").css({"transform":"scale(1.2)"});
+     setTimeout(function(){
+		 $(".item_pic5_bg").fadeIn(500);
+	 });
+  $("#item_info5").mouseleave(function(){
+  $("#item_info5").css({"background-color":"rgba(50, 50, 50, 1)",});
+  $("#item_pic5").css({"transform":"scale(1)"});
+     setTimeout(function(){
+		 $(".item_pic5_bg").fadeOut(500);
+	 });
+  });
+  });
+  
+  $("#item_info6").mouseenter(function(){
+  $("#item_info6").css({"background-color":"rgba(204,0,0,1)",});
+  $("#item_pic6").css({"transform":"scale(1.2)"});
+     setTimeout(function(){
+		 $(".item_pic6_bg").fadeIn(500);
+	 });
+  $("#item_info6").mouseleave(function(){
+  $("#item_info6").css({"background-color":"rgba(50, 50, 50, 1)",});
+  $("#item_pic6").css({"transform":"scale(1)"});
+     setTimeout(function(){
+		 $(".item_pic6_bg").fadeOut(500);
+	 });
+  });
+  });
+  
+});
+</script>
+
+</html>

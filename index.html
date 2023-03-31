@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio | Hersh Chen</title>
+
+<!--bootstrap-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--bootstrap-->
+
+<!--icon-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!--icon-->
+
+<!--meun-->
+<link rel="stylesheet" href="css/style.css"/>
+<!--meun-->
+
+<style>
+
+body:after {
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	display:block;
+	background:url(image/backgroundimage/12083.jpg) no-repeat 50% 50%;
+	background-size:cover;
+}
+</style>
+
+</head>
+
+<body>
+
+
+<!--MENU-->
+<header>
+<div id="menu" class="container fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <a style="text-decoration:none" class="designnamelogo" href="index.html">Hersh Chen</a>
+<button style="background-color:#FFF" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div data-spy="scroll" class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav" href="resume.html">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav" href="projects.html">Projects</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+</header>
+<!--MENU-->
+
+<!--CONTENT-->
+<section>
+<div class="col-md-12 text-center about" id="about">    
+   <div style="position:relative" class="row">
+ 
+    <!--DesignerBox-->
+       <div class="col-md-3 col-sm-6 col-8 offset-md-1 offset-sm-3 offset-2 text-left" class="name_box" id="name_box">
+       <div style="height:2px; width:30px; background-color:#333"></div>
+       <p>Hello
+       <p style="font-size: 38px; margin-top: -25px;">I'm</p>
+       <span>Hersh Chen</span>
+       </div>
+    <!--DesignerBox-->
+   </div>
+   
+    <div class="col-md-10 offset-md-1">
+      <div class="row">
+    <!--DesignerPic-->
+       <div class="col-md-4 text-center" class="name_pic" id="name_pic">
+       <img src="image/designer/S__176824324.jpg" /><p>- Interest at Work -</p>
+       </div>
+    <!--DesignerPic-->
+     
+    <!--DesignerInfo--> 
+       <div class="col-md-8 text-left" class="name_info" id="name_info">
+       <h1>A few facts about myself</h1>
+       <p>Experienced Marketing Consultant with a demonstrated history of working in the international trade and development industry. With strong marketing skills in Search Engine Optimization (SEO), Website optimization UXUI - WordPress, Event Management, Google ads, Email Marketing, Marketing Automation, and B2B marketing. Excellent problem-solving and communication.</p>
+
+       </div>
+    <!--DesignerInfo--> 
+     </div>
+   </div> 
+</div>
+</section>
+
+
+<section>
+  <div class="col-md-12 text-center follow" id="follow"> 
+    
+     <div style="position:relative" class="row">
+        <div class="col-md-12 follow_title visible ">
+          <h2>My Social Media</h2>
+        </div>
+     </div>
+     
+  <div class="col-md-8 offset-md-2 row square_box">
+       <div class="col-sm-4 square_image visible"><a target="_blank" href="https://www.linkedin.com/in/hersh-chen-95b8b3210/"><img src="image/social-media/linkedin.png"></a></div>
+       <div class="col-sm-4 square_image visible"><a target="_blank" href="https://www.instagram.com/hungyue_0904/"><img src="image/social-media/instagram.png"></a></div>
+       <div class="col-sm-4 square_image visible"><a target="_blank" href="https://www.facebook.com/polar790904/"><img src="image/social-media/facebook.png"></a></div>
+  </div>    
+  </section>
+  
+  
+  <section>
+   <!--Footer--> 
+   <div class="col-md-12 text-center" id="bottom">
+       <div id="gotop"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></div>
+       <br />
+       <div class="footertext">Copyright © 2022 Hersh Chen</div>
+    </div>
+    <!--Footer--> 
+  </section>
+
+<!--CONTENT-->
+
+</body>
+
+<script>
+/* LODAING完載入 */
+$(document).ready(function(){
+  var elem = document.getElementById("myBar");   /* 進度條 */
+  var width = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("label").innerHTML = width * 1  + '%';
+    }
+  }
+   $(window).load(function(){
+        $(".loading").delay().fadeOut(1000)   /* 延遲淡出 */
+		setTimeout(function(){
+		$('html,body').css("height","auto");
+	},);
+    });
+});
+</script>
+<script>
+/* 漢堡展開事件 */
+var toggler=0;
+        $(".navbar-toggler").click(function() {
+            if(toggler==0){
+                 $("#menu").css({"height":"100%","background-color":"rgba(100,100,100,0.9)","overflow":"auto"});
+                 toggler=1;
+            }else  {
+                 $("#menu").removeAttr("style"); /* 消除CSS */
+                 toggler=0;
+            }
+			 });
+</script>
+<script type="text/javascript">
+/* 按下GoTop回頂端 */
+$(function() {
+    $('#gotop').click(function(){
+        $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回SCROLL到最頂上 */
+        return false;
+    });
+    
+});
+</script>
+
+<script>
+// 視窗事件
+$( window ).scroll( function () {
+     
+    // 當視窗滾動到“區塊名稱” 以上500px (註1) 我這邊是以滾動到我的第二區塊 ＃about 為例   
+    if ( $( this ).scrollTop() > $( ".follow" ).offset().top - 600 ) {
+      //用 each 帶一個參數 i 
+      $( ".follow .visible" ).each( function ( i ) {
+        //讓所有 visible delay 200秒 刪除class 切換  fadeInUp
+        $( this ).delay( i * 200 ).queue( function () {
+          $( this ).removeClass( "visible" ).addClass( "fadeInUp" );
+        } );
+      } );
+    }
+	} );    
+</script>
+
+<script>
+// 視窗事件
+$( window ).scroll( function () {
+     
+    // 當視窗滾動到“區塊名稱” 以上500px (註1) 我這邊是以滾動到我的第二區塊 ＃about 為例   
+    if ( $( this ).scrollTop() > $( ".square_box" ).offset().top - 600 ) {
+      //用 each 帶一個參數 i 
+      $( ".square_box .visible" ).each( function ( i ) {
+        //讓所有 visible delay 200秒 刪除class 切換  fadeInUp
+        $( this ).delay( i * 400 ).queue( function () {
+          $( this ).removeClass( "visible" ).addClass( "fadeInUp" );
+        } );
+      } );
+    }
+	} );    
+</script>
+
+</html>

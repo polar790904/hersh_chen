@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Hersh Chen</title>
+
+<!--bootstrap-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--bootstrap-->
+
+<!--icon-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!--icon-->
+
+<!--meun-->
+<link rel="stylesheet" href="css/style.css"/>
+<!--meun-->
+
+<!--loading-->
+<link rel="stylesheet" href="css/loading.css"/>
+<!--loading-->
+
+<style>
+body:after {
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	display:block;
+	background:url(image/backgroundimage/12083.jpg) no-repeat 50% 50%;
+	background-size:cover;
+}
+</style>
+
+</head>
+
+<body class="scoll_dis">
+
+<!--MENU-->
+<header>
+<div id="menu" class="container fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <a style="text-decoration:none" class="designnamelogo" href="index.html">HershChen</a>
+<button style="background-color:#FFF" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div data-spy="scroll" class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav" href="resume.html">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav" href="projects.html">Projects</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav active" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+</header>
+<!--MENU-->
+
+<!--CONTENT-->
+<section>
+<div class="col-md-12 text-center about" id="contact">    
+   <div style="position:relative" class="row">
+ 
+    <!--ContactBox-->
+       <div class="col-md-3 col-sm-6 col-8 offset-md-1 offset-sm-3 offset-2 text-left" class="contact_box" id="contact_box">
+       <div style="height:2px; width:30px; background-color:#333"></div>
+       <p>Contact</p>
+       <span>Hersh Chen</span>
+       </div>
+    <!--ContactBox-->
+   </div>
+   
+    <div class="col-md-10 offset-md-1">
+      <div class="row">
+    <!--Contacttext-->
+       <div class="col-lg-5 col-md-12" class="contact_info" id="contact_info">
+         <h2>HELLO!</h2>
+         <p>FOR GENERAL QUESTIONS AND INQUIRIES<br />
+
+PLEASE FILL OUT THE CONTACT FORM</p>
+        
+        <p style="margin-top:65px">OR SEND AN EMAIL TO</p>
+        <a href="mailto:polar790904@gmail.com" onClick="ga('send', 'event', 'email', 'click');"><p>polar790904@gmail.com</p></a>
+
+       </div>
+    <!--Contacttext-->
+     
+    <!--ContactFROM--> 
+       <div class="col-lg-7 col-md-12 text-left" class="contact_from" id="contact_from">
+       
+       <form>
+
+<div class="row">
+    <div id="from_title" class="col-md-12">NAME*</div>
+    <div class="col-md-2">
+    <select  name="sex" id="sex" class="form-control from_btn">
+       <option value="Mr.">Mr.</option>
+       <option value="Mrs.">Mrs.</option>
+    </select>
+    </div>
+    <div class="col-md-5">
+      <input name="name_first" id="name_first" type="text" class="form-control from_btn" placeholder="First Name">
+    </div>
+    <div class="col-md-5">
+      <input name="name_last" id="name_last" type="text" class="form-control from_btn" placeholder="Last Name">
+    </div>
+  </div>
+  
+<br>  
+  
+<div class="row">
+    <div id="from_title" class="col-md-12">INFORMATION*</div>
+    <div class="col-md-6">
+      <input id="phone" name="phone" type="tel" class="form-control from_btn" placeholder="Phone Number">
+    </div>
+    <div class="col-md-6">
+      <input name="mail" id="mail" type="email" class="form-control from_btn" placeholder="E-mail">
+    </div>
+  </div>
+
+<br> 
+
+<div class="row">
+    <div id="from_title" class="col-md-12">MESSAGES*</div>
+<div class="col-md-12">
+    <textarea  name="content" id="contents" class="form-control from_btn" rows="5"></textarea>
+</div>  
+</div>
+
+<button id="from_send" type="submit" class="btn"><span style="letter-spacing:3px">SEND</span></button>
+  
+</form>
+
+       </div>
+    <!--ContactFROM--> 
+     </div>
+   </div> 
+</div>
+</section>
+
+<div id="map"></div>
+    <div id="drop-container"><div id="drop-silhouette"></div></div>
+
+
+<section>
+ <!--Footer--> 
+ <div class="col-md-12 text-center" id="bottom">
+     <div id="gotop"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></div>
+     <br />
+     <div class="footertext">Copyright © 2022 Hersh Chen</div>
+  </div>
+  <!--Footer--> 
+</section>
+
+<!--CONTENT-->
+
+</body>
+
+
+<script>
+/* 漢堡展開事件 */
+var i=0;
+        $(".navbar-toggler").click(function() {
+            if(i==0){
+                 $("#menu").css({"height":"100%","background-color":"rgba(100,100,100,0.9)","overflow":"auto"});
+                 i=1;
+            }else  {
+                 $("#menu").removeAttr("style"); /* 消除CSS */
+                 i=0;
+            }
+			 });
+</script>
+<script type="text/javascript">
+/* 按下GoTop回頂端 */
+$(function() {
+    $('#gotop').click(function(){
+        $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回SCROLL到最頂上 */
+        return false;
+    });
+    
+});
+</script> 
+
+ <script>
+      /* Map functions */
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+      center: { lat: 25.074105199170145, lng: 121.48216183977179 },
+      zoom: 16,
+	  
+		styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+		
+      });
+	  
+      var marker = new google.maps.Marker({
+      position : { lat: 25.074105199170145, lng: 121.48216183977179 },
+	  icon: "image/designer/HershChen_32x32.png",
+	  animation: google.maps.Animation.DROP,
+      map:map,
+      title:'My Location'
+    })
+	
+    }
+
+	
+
+      function loadGeoJsonString(geoString) {
+        var geojson = JSON.parse(geoString);
+        map.data.addGeoJson(geojson);
+        zoom(map);
+      }
+
+      /**
+       * Update a map's viewport to fit each geometry in a dataset
+       * @param {google.maps.Map} map The map to adjust
+       */
+      function zoom(map) {
+        var bounds = new google.maps.LatLngBounds();
+        map.data.forEach(function(feature) {
+          processPoints(feature.getGeometry(), bounds.extend, bounds);
+        });
+        map.fitBounds(bounds);
+      }
+
+      /**
+       * Process each point in a Geometry, regardless of how deep the points may lie.
+       * @param {google.maps.Data.Geometry} geometry The structure to process
+       * @param {function(google.maps.LatLng)} callback A function to call on each
+       *     LatLng point encountered (e.g. Array.push)
+       * @param {Object} thisArg The value of 'this' as provided to 'callback' (e.g.
+       *     myArray)
+       */
+      function processPoints(geometry, callback, thisArg) {
+        if (geometry instanceof google.maps.LatLng) {
+          callback.call(thisArg, geometry);
+        } else if (geometry instanceof google.maps.Data.Point) {
+          callback.call(thisArg, geometry.get());
+        } else {
+          geometry.getArray().forEach(function(g) {
+            processPoints(g, callback, thisArg);
+          });
+        }
+      }
+
+
+      /* DOM (drag/drop) functions */
+
+      function initEvents() {
+        // set up the drag & drop events
+        var mapContainer = document.getElementById('map');
+        var dropContainer = document.getElementById('drop-container');
+
+        // map-specific events
+        mapContainer.addEventListener('dragenter', showPanel, false);
+
+        // overlay specific events (since it only appears once drag starts)
+        dropContainer.addEventListener('dragover', showPanel, false);
+        dropContainer.addEventListener('drop', handleDrop, false);
+        dropContainer.addEventListener('dragleave', hidePanel, false);
+      }
+
+      function showPanel(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        document.getElementById('drop-container').style.display = 'block';
+        return false;
+      }
+
+      function hidePanel(e) {
+        document.getElementById('drop-container').style.display = 'none';
+      }
+
+      function handleDrop(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        hidePanel(e);
+
+        var files = e.dataTransfer.files;
+        if (files.length) {
+          // process file(s) being dropped
+          // grab the file data from each file
+          for (var i = 0, file; file = files[i]; i++) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+              loadGeoJsonString(e.target.result);
+            };
+            reader.onerror = function(e) {
+              console.error('reading failed');
+            };
+            reader.readAsText(file);
+          }
+        } else {
+          // process non-file (e.g. text or html) content being dropped
+          // grab the plain text version of the data
+          var plainText = e.dataTransfer.getData('text/plain');
+          if (plainText) {
+            loadGeoJsonString(plainText);
+          }
+        }
+
+        // prevent drag event from bubbling further
+        return false;
+      }
+
+
+      function initialize() {
+        initMap();
+        initEvents();
+      }
+    </script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnOmXH1OBYbwkoeNKI1b9Gh2ksiOJz8l8&callback=initialize"></script>  
+</html>
