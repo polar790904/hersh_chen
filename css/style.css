@@ -93,7 +93,7 @@ hr, .hr-white{
 	background-color:rgba(50,50,50,0.95);
 	padding:50px;
 	height:auto;
-	margin-top: -12px;
+	margin-top: -16px;
 	padding-bottom:50px;
 }
 .education {
@@ -204,10 +204,10 @@ hr, .hr-white{
 	margin-top:12%;
 	}
 .resume h1 {
-	font-family: 'Noto Serif TC', serif;
+	font-family: 'Playfair Display', serif;
 	font-size: 48px;
 	font-weight: 400;
-	letter-spacing:1px;
+	letter-spacing:2px;
 	color: #FFF;
 }
 #resume_title {
@@ -228,6 +228,11 @@ hr, .hr-white{
 	font-size: 16px;
 	display: inline;
 }
+#resume_text pre {
+	font-family: 'Roboto';
+	color: #FFF;
+	font-size: 18px;
+}
 #resume_text p, #resume_text ul li  {
 	color: #FFF;
 	font-family: 'Roboto';
@@ -246,6 +251,11 @@ hr, .hr-white{
 	padding-top: 18px;
 	padding-bottom: 18px;
 	letter-spacing:1px;
+}
+#resume_text_black pre {
+	font-family: 'Roboto';
+	color: rgba(51,51,51,1);
+	font-size: 18px;
 }
 #resume_text_black span {
 	color: rgba(51,51,51,1);
@@ -494,9 +504,15 @@ hr, .hr-white{
 	}
 }
 
+@media screen and (max-width:991px){
+	.nav-item a {
+		padding-top: 15px;
+		font-size: 28px;
+		line-height: 36px;
+	}
+}
 
 @media screen and (max-width:699px){
-
 #name_box span {
 	font-size:32px;
 	}
