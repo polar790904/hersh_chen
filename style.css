@@ -1,0 +1,682 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+
+
+html, body {
+	overflow-X:hidden;
+	height:100%;
+
+}
+
+a { color:rgba(255,255,255,1); text-decoration:none }
+a:hover { text-decoration:none;color:rgba(255,255,255,1); }
+
+hr, .hr-white{
+	background-color:rgba(255,255,255,0.5);
+	position:relative;
+	margin-top:80px;
+	margin-bottom:80px;
+	}
+
+.navbar { 
+         padding-top:20px;
+		 padding-bottom:20px;
+		 } /*navbar(menu)高度*/
+		 
+.navbar a:hover { color:rgba(255,255,255,0.7) }
+
+.navbar .active { color:rgba(255,255,255,0.7) }
+
+.designnamelogo { 
+         font-family: 'Pinyon Script', cursive;
+		 margin-top:15px;
+		 font-weight:600;
+		 font-size:34px;
+		 color:rgba(255,255,255,1);
+		 text-shadow:3px 3px 3px rgba(51,51,51,1);
+		 text-decoration:none;
+		 max-width: 50 px;
+		 }
+		 
+#navbarSupportedContent ul li { 
+         padding: 10px 30px 10px 30px;
+		 margin-top:15px;
+		 background-color:transparent;
+		 }  /*munu(li)間隔*/
+		 
+.nav-item a { 
+         color:rgba(255,255,255,1);
+		 font-size:16px;
+		 font-family: 'Baloo Tamma 2', cursive;
+		 letter-spacing:1px;
+		 font-weight:500;
+		 text-shadow:2px 2px 2px rgba(30,30,30,1);
+		 text-decoration:none;
+           }
+
+.about, .contact {  
+         position:relative; 
+		 margin-top:350px;
+		 background-color:rgba(50,50,50,0.95);
+		 padding:50px;
+		 height:auto;
+		 padding-bottom:150px;
+		 }
+/*project內頁大項*/
+.project-item{
+	     position:relative; 
+		 margin-top:180px;
+		 background-color:rgba(50,50,50,0.95);
+		 padding:50px;
+		 height:auto;
+		 padding-bottom:150px;
+		 margin-bottom:10%;
+	    }
+#swiper-box{
+	     width:100%;
+	     margin-top:10%;
+	     text-align:center;
+		}
+.swiper-slide{
+	     text-align:center;
+	     width: 100%;
+	     height:100%;
+		}
+.swiper-slide img{
+	     width: 80%;
+		}
+.swiper_page{
+		margin: 20px auto;
+		left: 0;
+		right: 0;
+		}
+.swiper_page span{
+		margin: 0 10px;
+		color:#FFF;
+		background-color:#FFF;
+		}
+.swiper-pagination-bullet-active{
+		width: 16px;
+		border-radius: 8px;
+		}			
+/*project內頁大項*/
+/*project主頁*/		  
+.projects {  
+         position:relative; 
+		 height:auto;
+		 padding-bottom:10%;
+		  }	  
+		  
+.projects_title{
+	    margin-top:245px;
+	  	color:rgba(255,255,255,1);
+		font-family: 'Playfair Display', serif;
+		font-size:72px; 
+		line-height:56px;
+		font-weight:600;
+		letter-spacing:2px;
+		text-shadow:1px 1px 5px rgba(51,51,51,1);
+		padding-bottom:10px;
+		animation:box 1s;
+	    }
+
+.projects_title span {
+	    font-size:62px;
+	    }		
+/*project主頁*/		
+		  
+#name_box, #contact_box { 
+         background-color:rgba(245,245,245,1);
+		 height:300px;
+		 position:absolute;
+		 top:-200px;
+		 padding:45px;
+		 animation:box 6s;
+          }
+#name_box p, #contact_box p {
+		 font-size:48px;
+		 color: rgba(51,51,51,1);
+		 font-family: 'Rufina', serif;
+		 line-height:28px;
+		 letter-spacing:2px;
+		 padding-top:25px;
+         }
+#name_box span, #contact_box span {
+		 color: rgba(51,51,51,1);
+		 font-family: 'Oooh Baby', cursive;
+		 font-size: 42px;
+		 letter-spacing:0px;
+		 position:absolute;
+         }
+#name_pic, #contact_info {
+	margin-top:150px;
+	}
+ #project_info {
+	margin-top:12%;
+	}
+	
+/*about Instagram*/	
+.follow {
+	background-color:rgba(235,235,235,0.9);
+	padding:150px 0px 150px 0px;
+	margin-bottom:10%;
+	}
+
+.follow_title h2 {
+	font-family: 'Playfair Display', serif;
+	font-size:64px;
+	letter-spacing:1px;
+	color:rgba(51,51,51,1);
+	font-weight:600;
+	}
+	
+.square_box{
+    position:relative;
+	margin-top:25px;
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	
+}
+.square_image{
+	flex:1;
+	width:200px;
+	padding-bottom:16.66%;
+	min-width: 16.66%;
+    max-width: 16.66%;
+	background-size:cover;
+    background-repeat:no-repeat;
+    background-position:50% 50%;	
+}
+
+#follow_con {
+	margin-top:60px;
+	}
+.follow_btn {
+	font-family: 'Ubuntu', sans-serif;
+	letter-spacing:2px;
+	font-size:13px;
+	padding:15px 45px 15px 45px;
+	background-color: rgba(5,51,102,1);
+	}
+.follow_btn:hover {
+	font-size:13px;
+	background-color: rgba(255,0,51,1);	}	
+/*about Instagram*/	
+#contact_info {
+	text-align:left;
+	}	
+
+#contact_info p, #project_info p, #name_info p {
+	margin-top:50px;
+	font-family: 'Noto Sans TC', sans-serif;
+	line-height:2;
+	color: rgba(255,255,255,1);
+	font-size:15px;
+	letter-spacing:1px;
+	font-weight:300;
+	}	
+
+#contact_info h2 {
+	font-family: 'Rufina', serif;
+	color: rgba(255,255,255,1);
+	font-size:32px;
+	line-height:1.5;
+	letter-spacing:2px;
+	}	
+
+#project_info h2 {
+	font-family: 'Ramabhadra', sans-serif;
+	color: rgba(255,255,255,1);
+	font-size:32px;
+	line-height:1.5;
+	letter-spacing:2px;
+	}	
+	
+#name_pic img {
+	width:60%;
+	border-radius:999rem;
+	margin-left:-15%;
+	animation:pic 10s;
+	animation-direction: 4s;
+	}
+	
+#name_pic p {
+	font-family: 'Noto Sans TC', sans-serif;
+	line-height:2;
+	color:#FFF;
+	font-size:15px;
+	letter-spacing:1px;
+	text-align:center;
+	margin-left:-15%;
+	margin-top:15px;
+	animation:INwork 5s;
+	}	
+		 
+#name_info, #contact_from {
+	margin-top:150px;
+	animation:info_from 5s
+	}
+
+#name_info h1 {
+	font-family: 'Playfair Display', serif;
+	line-height:1.5;
+	color:#FFF;
+	letter-spacing:1px;
+	animation:info_from 5s;
+	}		
+	
+#name_info p {
+	font-family: 'Noto Sans TC', sans-serif;
+	line-height:2;
+	color:#FFF;
+	font-size:15px;
+	font-weight:300;
+	letter-spacing:1px;
+	margin-top:60px;
+	animation:info_from 5s
+	}	
+	
+#contact_from p {
+	font-family: 'Noto Sans TC', sans-serif;
+	line-height:2;
+	color:#FFF;
+	font-size:15px;
+	letter-spacing:1px;
+	text-align:justify;
+	}
+	
+#from_title {
+	font-family: 'Ubuntu', sans-serif;
+	color:#FFF;
+	margin-bottom:10px;
+	}
+	
+.from_btn{
+	margin-top:5px;
+	margin-bottom:5px
+	}	
+#from_send{
+	padding:8px 50px 8px 50px;
+	background-color: rgba(255,0,51,1);
+	color: rgba(255,255,255,1);
+	margin-top:25px;
+	}
+#from_send:hover{
+	padding:8px 50px 8px 50px;
+	background-color: rgba(5,51,102,1); 
+	color: rgba(255,255,255,1);
+	margin-top:25px;
+	}	
+/**MAP**/	
+#map { height: 450px; margin-bottom:10%}
+#drop-container {
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+      }
+#drop-silhouette {
+        color: white;
+        border: white dashed 8px;
+        height: calc(100% - 15px);
+        width: calc(100% - 15px);
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAAZiS0dEAGQAZABkkPCsTwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90LHAIvICWdsKwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAACdklEQVR42u3csU7icBzA8Xp3GBMSeRITH8JHMY7cRMvmVmXoE9TAcJubhjD4ApoiopgqDMWAKAgIcSAiCfxuwhwROVJbkPD9rP23ob8vpZCQKgoAAAAAAAAAAPDYyiK/eNM05bNtr6+vSjgcXiHxDMkE1WpVFvGcfpCVICAIQUAQgoAgBAFBCAKCgCAEAUEIAoIQBAQhCAgCghAEBCEICEIQEIQgIAgIQhAQhCAgCEFAEIKAICAIQUAQgoAgBAFBCDIzhmFINBo9/K6D0XVddnd3ZaneDY7jSCqVcn3SfjyeKRKJbJ2dnYllWbKUl2i5XJaXlxdJJBIy7yDHx8fy9vYm6XR6OWMM3d/fi4hIqVSSWCwmsw5ycHAgrVZLRETOz8+XO8ZQpVJ5H2Y6nRZN0/b9DqLruhSLxfd9MpkMMT6L0uv1JJlMih9BhveJwWDwvv7i4oIY4zw8PIwMtt1uSzweF6+CHB0dSbfbHVmbzWaJMcnj4+OHAd/d3cne3p64DWKapjw/P39Yd3l5SYxpVKvVsYO2LEtUVd2ZNoiu6+I4ztg1V1dXxPAiSq/Xk5OTk0k9pNVqyenp6ch94l+5XI4YbtRqNfHa9fX1t43xcwGa/Nnc3PwdDAY9OZht28rGxgZPvP6KSCSy9fT09OUrw7ZtPqa8jFKv113HuLm5IYbXVFXdcRPl9vaWGH5GaTQaU8fI5/PE8JumafvNZvO/MQqFAjFmJRqNHk6Ksqgx5vr1zzAM2d7edr3/6uqqsra2NnZbp9NR+v2+62OHQqG5zObXPIMEAgFlfX3dl2N79btl1viTA0FAEIKAIAQBAAAAAAAAsMz+Ai1bUgo6ebm8AAAAAElFTkSuQmCC');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+/**MAP**/		
+
+#gotop i {
+	font-size:34px;
+	color:#FFF;
+	cursor:pointer;
+	padding-bottom:5px;
+	}
+#bottom {
+	padding-bottom:15px;
+	}
+.footertext { 
+    font-family: 'Ubuntu', sans-serif;
+	font-size:14px;
+    color:#FFF; 
+	opacity:0.6;
+	 }
+
+
+.visible {
+  opacity: 0;
+}
+
+.fadeInUp {
+  animation: fade-silderUp 2s ;
+}	
+	 
+@media screen and (max-width:1024px){
+/*about, contact box*/
+#name_info h1 {
+	     font-size:26px;
+          }
+#name_box, #contact_box { 
+         background-color:rgba(245,245,245);
+		 height:300px;
+		 position:absolute;
+		 top:-200px;
+		 padding:25px;
+          }
+#name_box p, #contact_box p {
+		 font-size:32px;
+		 color: rgba(51,51,51,1);
+		 font-family: 'Rufina', serif;
+		 line-height:22px;
+		 letter-spacing:2px;
+		 padding-top:25px;
+         }
+#name_box span, #contact_box span {
+		 color: rgba(51,51,51,1);
+		 letter-spacing:0px;
+
+         }
+/*about, contact box*/
+/*about Instagram image*/		 
+.square_image{
+	flex:1;
+	width:25%;
+	background-color:#CCC;
+	padding-bottom:25%;
+	min-width: 25%;
+    max-width: 25%;
+	background-size:cover;
+    background-repeat:no-repeat;
+    background-position:50% 50%;	
+}
+/*about Instagram image*/	
+	 
+#contact_info h2, #contact_info p {
+	text-align:center
+	}
+#contact_from {
+	margin-top:50px;
+	}
+}
+
+
+@media screen and (max-width:699px){
+#name_pic img {
+	width:60%;
+	border-radius:999rem;
+	margin-left:0%;
+	}
+#name_pic p {
+	margin-left:0%;
+	}	
+#name_info {
+	margin-top:80px;
+	}	
+}
+@keyframes box {
+    0% { opacity: 0; transform: translateY(-50px); }
+	40% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0px) }
+}
+@keyframes pic {
+    0% { opacity: 0 }
+	40% { opacity: 0 }
+    100% { opacity: 1 }
+}	
+@keyframes INwork {
+    0% { opacity: 0; transform: translateY(150px); }
+	40% { opacity: 0; transform: translateY(150px); }
+    100% { opacity: 1; transform: translateY(0px) }
+}
+@keyframes info_from {
+    0% { opacity: 0; transform: translateX(50px); }
+	40% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0px) }
+}
+
+@keyframes fade-silderUp {
+	
+    0% { opacity: 0;  transform: translateY(-50px); }
+    100% { opacity: 1;  transform: translateY(0px); }
+}
+
+
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
+  width:46%;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display:flex;
+  -webkit-flex-direction:row;
+  flex-direction:row;
+  flex-wrap:wrap;
+  margin:0;
+  padding:0;
+  background-size:cover;
+  background-repeat:repeat;
+  overflow:hidden;
+}
+
+.box_3, .box_4 {
+	flex-direction:row-reverse;
+	}
+
+.box_pic {
+  flex:1;
+  padding-bottom:50%;
+  border-width:1px;
+  border-style:solid;
+  color: rgba(255,255,255,1);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+  transition: 500ms ease-in;
+
+}
+
+.box_info1, .box_info2, .box_info3, .box_info4 {
+  flex:1;
+  position:relative;
+  cursor:pointer;
+  background-color: rgba(50, 50, 50, 1);
+  border-width:1px;
+  border-style:solid;
+  color: rgba(255,255,255,1);
+  text-align:left;
+  transition: 500ms ease-in;
+}
+
+
+.projects_con {
+	margin-left:8%;
+	}
+
+.projects_con h3 {
+  color: rgba(255,255,255,1);
+  letter-spacing:2px;
+  font-size:28px;
+  margin-top:25%;
+	}
+	
+.box_info1 h3, .box_info2 h3 {  
+  border-left:3px solid;
+  margin-left:-3px;
+  padding:3%;
+  line-height:1;
+  padding-left:25px;
+  border-color: rgba(204,0,0,1);
+  }
+.box_info1 p, .box_info2 p, .box_info3 p, .box_info4 p { 
+  font-family: 'Ubuntu', sans-serif;
+  line-height:1;
+  padding-left:25px;
+  margin-top:-16px;
+  font-size:13px;
+  letter-spacing:1px;
+  }
+  
+.box_info3 h3,.box_info4 h3 {  
+  border-right:3px solid;
+  margin-right:-3px;
+  padding:3%;
+  padding-left:25px;
+  border-color: rgba(204,0,0,1);
+  }  
+
+  
+.box_info1 span, .box_info2 span, .box_info3 span, .box_info4 span { 
+  position:absolute;
+  color :rgba(255,255,255,1);
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size:13px;
+  letter-spacing:5px;
+  padding:30px;
+  bottom:5px;
+  } 
+  
+
+
+@media screen and (max-width:1440px){
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6{ width:50%; }	
+.projects_con {
+	    margin-left:-15px;
+	}
+	
+.projects_title{
+	    margin-top:210px;
+		font-size:62px; 
+		line-height:42px;
+	    }
+
+.projects_title span {
+	    font-size:52px;
+	    }	
+}
+		
+@media screen and (max-width:960px){
+	
+.projects_title{
+	    margin-top:180px;
+		font-size:52px; 
+		line-height:36px;
+	    }
+
+.projects_title span {
+	    font-size:42px;
+	    }	
+
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6{ width:100% }
+.box_2 { flex-direction:row-reverse; }
+.box_3 { flex-direction:row }
+
+.projects_con {
+	margin-left:-15px;
+	}
+
+.box_info2 h3 {
+  border-left:0px solid;
+  border-right:3px solid;
+  margin-left:0px;
+  margin-right:-3px;
+  padding:15px;
+  padding-left:25px;
+  border-color: rgba(204,0,0,1);
+  }
+  
+.box_info3 h3 {
+  border-right:0px solid;
+  border-left:3px solid;
+  margin-right:0px;
+  margin-left:-3px;
+  padding:15px;
+  padding-left:25px;
+  border-color: rgba(204,0,0,1);
+  }  
+
+}
+
+
+@media screen and (max-width:640px){
+/*about Instagram*/	
+.follow_title h2 {
+	font-size:36px;
+	}
+.square_image{
+	flex:1;
+	width:50%;
+	background-color:#CCC;
+	padding-bottom:50%;
+	min-width: 50%;
+    max-width: 50%;
+	background-size:cover;
+    background-repeat:no-repeat;
+    background-position:50% 50%;	
+}
+/*about Instagram*/	
+#name_box, #contact_box {
+	height:240px;
+	}
+}
+
+
+@media screen and (max-width:560px){
+	
+.projects_title{
+	    margin-top:180px;
+		font-size:42px; 
+		line-height:30px;
+	    }
+		
+.projects_con h3 {
+	   font-size:22px; 
+	}
+
+.box_info1 span, .box_info2 span, .box_info3 span, .box_info4 span {
+	   letter-spacing:2px;
+	}	
+	
+.projects_title span {
+	    font-size:42px;
+	    }	
+#map { height: 280px;}	
+}
+@media screen and (max-width:480px){
+	
+.projects_title{
+		font-size:38px; 
+		line-height:26px;
+	    }
+		
+.projects_con h3 {
+	   font-size:18px; 
+	}	
+	
+.box_info1 p, .box_info2 p, .box_info3 p, .box_info4 p { 
+  margin-top:-12px;
+  font-size:11px;
+  }		
+
+.projects_title span {
+	    font-size:38px;
+	    }	
+	
+}
