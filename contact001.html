@@ -10,6 +10,10 @@
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<script src="js/validation.js"></script>
+
+
 <!--bootstrap-->
 
 <!--icon-->
@@ -108,29 +112,49 @@ PLEASE FILL OUT THE CONTACT FORM</p>
 
 <div class="row">
 
-  <form id="form1" name="form1" method="post" action="sendmail.php">
-    <fieldset>
-    <legend>留言給我們</legend>
-    <label>您的大名：</label>
-    <input id="C_name" name="C_name" type="text" />
-    <br />
-
-    <label>您的Email：</label>
-    <input id="C_email" name="C_email" type="text" />
-    <br />
-
-    <label>您的電話號碼：</label>
-    <input id="C_tel" name="C_tel" type="text" />
-    <br />
-
-    <label>您的寶貴意見：</label>
-    <textarea id="C_message" name="C_message"></textarea>
-    <br />
-
-    <input id="submit" name="submit" type="submit" value="確定送出" />
-    </fieldset>
-    </form>
-</body>
+  <!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+<form action='https://forms.zohopublic.com/en1/form/ContactForm/formperma/5a59_k72E315d21CgDd52E584/htmlRecords/submit' name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data'><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+  <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+  <!---------template Header Starts Here---------->
+  <!---------template Header Ends Here---------->
+  <!---------template Container Starts Here---------->
+  <div class="zf-subContWrap zf-topAlign"><ul>
+  <!---------Name Starts Here----------> 
+  <li class="zf-tempFrmWrapper zf-name zf-namemedium"><label class="zf-labelName">姓名
+  <em class="zf-important">*</em>
+  </label>
+  <div class="zf-tempContDiv"><div>				
+  <span> <input type="text" maxlength="255" name="Name_First" checktype="c1"/><label>姓</label> </span>
+  <span class="zf-last"> <input type="text" maxlength="255" name="Name_Last" checktype="c1"/><label>名</label> </span>
+  <div class="zf-clearBoth"></div></div><p id="Name_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+  </div><div class="zf-clearBoth"></div></li><!---------Name Ends Here----------> 
+  <!---------Phone Starts Here----------> 
+  <li  class="zf-tempFrmWrapper zf-phone small">
+    <label class="zf-labelName">聯絡電話
+  </label>
+  <div class="zf-tempContDiv"><div>
+  <input type="text" name="PhoneNumber_countrycode" compname="PhoneNumber" checktype="c7" phoneFormat="1" maxlength="20" value=""/>
+  <div class="zf-clearBoth"></div></div><p id="PhoneNumber_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+  <p class="zf-instruction">本電話將不做任何行銷外流</p>
+  </div><div class="zf-clearBoth"></div></li><!---------Phone Ends Here----------> 
+  <!---------Email Starts Here---------->  
+  <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Email 
+  <em class="zf-important">*</em>
+  </label>
+  <div class="zf-tempContDiv"><span> <input type="text" maxlength="255" name="Email" checktype="c5" value=""/></span> <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+  <p class="zf-instruction">請留下可以連絡到或可以接收到圖檔的信箱</p>
+  </div><div class="zf-clearBoth"></div></li><!---------Email Ends Here---------->  
+  <!---------Multiple Line Starts Here---------->
+  <li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName">請留下您保貴的意見或有任何問題都可留言,服務人員將儘速與您連絡 
+  <em class="zf-important">*</em>
+  </label>
+  <div class="zf-tempContDiv"><span> <textarea name="MultiLine" checktype="c1" maxlength="65535"></textarea> </span><p id="MultiLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+  </div><div class="zf-clearBoth"></div></li><!---------Multiple Line Ends Here---------->
+  </ul></div><!---------template Container Starts Here---------->
+  <ul><li class="zf-fmFooter"><button style="padding-left:35px; padding-right:35px; padding-top:10px; padding-bottom:10px;" class="zf-submitColor" ><span style="font-family: Microsoft JhengHei; color:#FFF">送&nbsp;&nbsp;&nbsp;&nbsp;出&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size:12px" class="glyphicon glyphicon-menu-right"></span> </span></button></li></ul></div><!-- 'zf-templateWrapper' ends --></form></div><!-- 'zf-templateWidth' ends -->
+  <script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+  var zf_MandArray = [ "Name_First", "Name_Last", "Email", "MultiLine"]; 
+  var zf_FieldArray = [ "Name_First", "Name_Last", "PhoneNumber_countrycode", "Email", "MultiLine"]; </script>
 
        </div>
     <!--ContactFROM--> 
